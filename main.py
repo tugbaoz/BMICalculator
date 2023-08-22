@@ -32,7 +32,7 @@ def button_clicked():
         try:
             bmı = (float(weight) / (float(height) ** 2)) *10000
             if bmı <= 18.4:
-                label_3= Label(text="Your BMI is {}. You are underweight.".format(bmı))
+                label_3= Label(text="Your BMI is {}. You are underweight.".format(round(bmı,2)))
                 label_3.config(padx=4, pady=4)
                 label_3.pack()
             elif bmı>18.5 and bmı<24.9:
